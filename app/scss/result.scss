@@ -1,0 +1,111 @@
+.result {
+	display: none;
+}
+
+@media (min-width: $tablet-width) {
+	.result {
+		display: block;
+		width: 620px;
+		margin: 0 auto;
+		padding: 0 20px;
+		padding-top: 60px;
+		padding-bottom: 90px;
+
+		background-color: $bg-lightgrey;
+	}
+
+	.result__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.result__icon {
+		width: 300px;
+		height: 280px;
+
+		background-image: url("../img/24hours.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	}
+
+	.result__title {
+		margin: 0;
+		margin-top: 40px;
+		margin-bottom: 17px;
+		padding: 0;
+
+		width: 170px;
+
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: bold;
+		color: #000000;
+	}
+
+	.result__text {
+		margin: 0;
+		margin-bottom: 16px;
+		padding: 0;
+
+		width: 310px;
+
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.result__learn-more {
+		font-size: 14px;
+		line-height: 24px;
+		color: #d22856;
+
+		text-decoration: underline;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.result {
+		box-sizing: border-box;
+		width: 1200px;
+		padding: 0 130px;
+		padding-bottom: 65px;
+
+		background-color: $bg-grey;
+	}
+
+	.result__wrapper {
+		justify-content: flex-start;
+	}
+
+	.result__icon {
+		width: 300px;
+		height: 350px;
+
+		background-size: contain;
+	}
+
+	.result__information {
+		width: 575px;
+
+		margin-left: 65px;
+	}
+	
+	.result__title {
+		width: 450px;
+
+		margin-top: 90px;
+	}
+
+	.result__text {
+		width: 550px;
+
+		margin-bottom: 32px;
+
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.result__learn-more {
+		font-size: 18px;
+		line-height: 30px;
+	}
+}

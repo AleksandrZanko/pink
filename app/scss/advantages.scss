@@ -1,0 +1,150 @@
+.advantages {
+	width: 320px;
+	margin: 0 auto;
+}
+
+.advantages__title-wrapper {
+	background-color: $bg-lightgrey;
+}
+
+.advantages__title {
+	margin: 0;
+	padding: 0;
+	padding-top: 42px;
+	padding-bottom: 25px;
+	font-size: 24px;
+	line-height: 34px;
+	font-weight: 300;
+	text-align: center;
+	color: #283645;
+}
+
+.advantages__title--offer {
+	padding-top: 0;
+	padding-bottom: 30px;
+}
+
+.advantages__triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 35px 320px;
+	border-color: transparent transparent #f2f2f2 transparent;
+}
+
+.advantages__list {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	padding-top: 70px;
+
+	background-color: $bg-grey;
+	list-style: none;
+}
+
+.advantages__list--top {
+	display: none;
+}
+
+.advantages__item:first-child {
+	padding-top: 47px;
+}
+
+@media (min-width: $tablet-width) {
+	.advantages {
+		width: 660px;
+		margin-top: -7px;
+	}
+
+	.advantages__title {
+		padding-top: 50px;
+		padding-bottom: 0;
+
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	.advantages__title--offer {
+		width: 380px;
+		margin: 0 auto;
+		padding-top: 0;
+		padding-bottom: 44px;
+
+		text-align: center;
+	}
+
+	.advantages__list {
+		position: relative;
+		min-height: 480px;
+	}
+
+	.advantages__triangle {
+		display: none;
+	}
+
+	.advantages__list--top {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 50px 660px 0 0;
+		border-color: #ffffff transparent transparent transparent;
+	}
+
+	.advantages__item:first-child {
+		padding-top: 72px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.advantages {
+		width: 1200px;	
+	}
+
+	.advantages__title-wrapper {
+		width: 1200px;
+	}
+
+	.advantages__title {
+		font-size: 50px;
+		line-height: 60px;
+	}
+
+	.advantages__title--offer {
+		width: 455px;
+		padding-bottom: 70px;
+	}
+
+	.advantages__list {
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-around;
+		
+		width: 1200px;
+		margin: 0 auto;
+		padding: 0 130px;
+	}
+
+	.advantages__list--top {
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 95px 1200px 0 0;
+		border-color: #ffffff transparent transparent transparent;
+	}
+
+	.advantages__item:first-child {
+		padding-top: 0;
+	}
+
+	.advantages__item {
+		background-image: url("../img/shadow.png");
+		background-repeat: no-repeat;
+		background-position: center 292px;
+	}
+}

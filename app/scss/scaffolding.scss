@@ -1,0 +1,55 @@
+body {
+	min-width: 320px;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "Open Sans", sans-serif;
+	color: #283645;
+	font-style: normal;
+
+	background-color: #ffffff;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button {
+	cursor: pointer;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+label {
+	cursor: pointer;
+}
+
+input,
+textarea {
+	&:hover {
+		border-color: #283645;
+	}
+	&:active {
+		border-color: #d22856;
+	}
+	outline: none;
+	cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.page-photo {
+	background-color: #ffffff;
+}

@@ -1,0 +1,258 @@
+.reviews {
+	position: relative;
+	width: 320px;
+	margin: 0 auto;
+	padding: 0 20px;
+	padding-bottom: 91px;
+
+	background-color: $bg-lightgrey;
+}
+
+.reviews__wrapper {
+	overflow: hidden;
+}
+
+.reviews__list {
+	display: flex;
+	width: 960px;
+	transition: transform 0.6s ease;
+}
+
+.reviews__item--showed {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0;
+	padding: 0;
+}
+
+.reviews__author-name {
+	display: block;
+
+	margin-bottom: 25px;
+	padding-top: 45px;
+
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	font-style: normal;
+	color: #000000;
+	text-align: center;
+}
+
+.reviews__author-information {
+	display: none;
+}
+
+.reviews__text {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	padding: 0;
+
+	width: 280px;
+
+	line-height: 30px;
+	text-align: center;
+}
+
+.reviews__prev,
+.reviews__next {
+	display: none;
+}
+
+.reviews__toggles {
+	margin: 0;
+	padding: 0;
+
+	text-align: center;
+}
+
+.reviews__bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 25px 320px;
+    border-color: transparent transparent #f2f2f2 transparent;
+}
+
+@media (min-width: $tablet-width) {
+	.reviews {
+		width: 660px;
+		padding-bottom: 75px;
+	}
+
+	.reviews__wrapper {
+		width: 620px;
+	}
+
+	.reviews__list {
+		width: 1860px;
+	}
+
+	.reviews__item {
+		display: flex;
+		flex-direction: column;
+
+		margin: 0;
+		padding: 0;
+	}
+
+	.reviews__author-name {
+		margin-bottom: 0;
+		padding: 0;
+		font-size: 20px;
+	}
+
+	.reviews__author-information {
+		display: block;
+		margin-bottom: 30px;
+
+		text-align: center;
+	}
+
+	.reviews__text {
+		width: 620px;
+		margin-bottom: 35px;
+
+		font-size: 18px;
+		order: -1;
+	}
+
+	.reviews__bottom {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 45px 660px;
+		border-color: transparent transparent #f2f2f2 transparent;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.reviews {
+		position: relative;
+		width: 1200px;
+		padding: 0 130px;
+		padding-top: 185px;
+		padding-bottom: 118px;
+
+		background-image: url("../img/quotes.png");
+		background-repeat: no-repeat;
+		background-position: center 73px;
+	}
+
+	.reviews__wrapper {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	.reviews__list {
+		position: relative;
+		width: 960px;
+	}
+
+	.reviews__item {
+		display: none;
+	}
+
+	.reviews__item--showed {
+		display: flex;
+		margin: 0 auto;
+	}
+
+	.reviews__author-name {
+		font-size: 24px;
+	}
+
+	.reviews__author-information {
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 40px;
+	}
+
+	.reviews__text {
+		width: 700px;
+	}
+
+	.reviews__prev,
+	.reviews__next {
+		display: block;
+		position: absolute;
+
+		width: 60px;
+		height: 120px;
+
+		background-color: transparent;
+		border: none;
+	}
+
+	.reviews__prev {
+		top: 0;
+		left: 0;
+		
+		background-image: url("../img/left-arrow.png");
+		background-repeat: no-repeat;
+		background-position: 0 20px;
+	}
+
+	.reviews__prev:hover {
+		background-image: url("../img/left-arrow-hover.png");
+	}
+
+	.reviews__prev:active {
+		background-image: url("../img/left-arrow-checked.png");
+	}
+
+	.reviews__prev[disabled] {
+		cursor: no-drop;
+		background-image: url("../img/left-arrow-checked.png");
+	}
+
+	.reviews__next {
+		top: 0;
+		right: 0;
+
+		background-image: url("../img/right-arrow.png");
+		background-repeat: no-repeat;
+		background-position: 0 20px;
+	}
+
+	.reviews__next:hover {
+		background-image: url("../img/right-arrow-hover.png");
+	}
+
+	.reviews__next:active {
+		background-image: url("../img/right-arrow-checked.png");
+	}
+
+	.reviews__next[disabled] {
+		cursor: no-drop;
+		background-image: url("../img/right-arrow-checked.png");
+	}
+
+	.reviews__toggles {
+		display: none;
+	}
+
+	.reviews__bottom {
+		position: absolute;
+		bottom: 0;
+		left: 130px;
+
+		display: inline-block;
+		margin: 0 auto;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 85px 1200px;
+		border-color: transparent transparent #f2f2f2 transparent;
+	}
+}

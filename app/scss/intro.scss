@@ -1,0 +1,53 @@
+.intro {
+	width: 280px;
+
+	margin: 0 auto;
+	padding: 50px 20px;
+
+	background-color: #ffffff;
+}
+
+.intro__text {
+	width: 250px;
+
+	margin: 0 auto;
+
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #283645;
+
+	text-align: center;	
+}
+
+@media (min-width: $tablet-width) {
+	.intro {
+		width: 620px;
+
+		padding-top: 95px;
+		padding-bottom: 80px;
+	}
+
+	.intro__text {
+		width: 450px;
+
+		font-size: 18px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.intro {
+		width: 940px;
+
+		padding-top: 90px;
+		padding-bottom: 85px;
+		padding-left: 130px;
+		padding-right: 130px;
+	}
+
+	.intro__text {
+		width: 620px;
+
+		font-size: 18px;
+	}
+}
