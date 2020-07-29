@@ -6,6 +6,7 @@
 * adaptive layout
 * CSS slider
 * JavaScript slider
+* JavaScript burger-menu
 * Jquery phone mask plugin
 
 ### You can run this project locally just do:
