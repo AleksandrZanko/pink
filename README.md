@@ -2,11 +2,11 @@
 ## Training project Pink
 
 ### In this project I mastered:
-* html/css coding
+* HTML/CSS coding
 * adaptive layout
-* css slider
-* javascript slider
-* jquery phone mask plugin
+* CSS slider
+* JavaScript slider
+* Jquery phone mask plugin
 
 ### You can run this project locally just do:
 1. git clone https://github.com/AleksandrZanko/pink
