@@ -7,7 +7,7 @@
 * CSS slider
 * JavaScript slider
 * JavaScript burger-menu
-* Jquery phone mask plugin
+* jQuery phone mask plugin
 
 ### You can run this project locally just do:
 1. git clone https://github.com/AleksandrZanko/pink
